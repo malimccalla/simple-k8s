@@ -1,0 +1,12 @@
+name: Build and Deploy to GKE
+
+on:
+  release:
+    types: [prereleased, released]
+
+jobs:
+  setup-build-publish-deploy:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello"
